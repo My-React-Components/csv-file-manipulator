@@ -194,7 +194,7 @@ function App() {
         sx={{
           position: "absolute",
           height: "100vh",
-          overflowY: "scroll",
+          overflowY: "auto",
           "&::-webkit-scrollbar": {
             width: "16px",
           },
