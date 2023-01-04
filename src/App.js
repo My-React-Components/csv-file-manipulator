@@ -31,6 +31,10 @@ import {
   TableRow,
   TableCell,
 } from "@mui/material";
+import sidebg from "./Assets/sidebg.png";
+import firstWhiteIcon from "./Assets/white-ico.svg";
+import secondWhiteIcon from "./Assets/whiteicon.svg";
+import yellowIcon from "./Assets/yellow-ico.svg";
 
 function App() {
   const [file, setFile] = useState(null);
@@ -212,8 +216,7 @@ function App() {
           item
           xs={3}
           sx={{
-            backgroundImage:
-              'url("http://123.253.12.155:8088/rpac-app/img/sidebg.png")',
+            backgroundImage: `url(${sidebg})`,
             height: "93vh",
             padding: "20px",
             borderBottomRightRadius: "50px",
@@ -232,7 +235,7 @@ function App() {
             <Box sx={{ m: 3 }}>
               <Box>
                 <Stack direction="row" alignItems="center">
-                  <img src="http://123.253.12.155:8088/rpac-app/img/whiteicon.svg" />
+                  <img src={secondWhiteIcon} />
                   <Typography
                     sx={{ color: "#ffc400", fontWeight: "600", ml: 1 }}
                   >
@@ -312,7 +315,7 @@ function App() {
               {/* 2nd block */}
               <Box>
                 <Stack direction="row" alignItems="center">
-                  <img src="http://123.253.12.155:8088/rpac-app/img/white-ico.svg" />
+                  <img src={firstWhiteIcon} />
                   <Typography
                     sx={{ color: "#ffc400", fontWeight: "600", ml: 1 }}
                   >
@@ -336,7 +339,7 @@ function App() {
               {/* 3rd block */}
               <Box>
                 <Stack direction="row" alignItems="center">
-                  <img src="http://123.253.12.155:8088/rpac-app/img/white-ico.svg" />
+                  <img src={firstWhiteIcon} />
                   <Typography
                     sx={{ color: "#ffc400", fontWeight: "600", ml: 1 }}
                   >
@@ -360,9 +363,6 @@ function App() {
                 </Box>
               </Box>
             </Box>
-          </Box>
-          <Box>
-            <img href={"http://123.253.12.155:8088/rpac-app/img/logo.svg"} />
           </Box>
         </Grid>
         {/*  second column 75% */}
@@ -431,7 +431,7 @@ function App() {
             <Stack spacing={2} direction="row" alignItems="center">
               <Avatar
                 sx={{ width: "30px", height: "30px" }}
-                src="http://123.253.12.155:8088/rpac-app/img/yellow-ico.svg"
+                src={yellowIcon}
               />
               <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                 CSV TO JSON/CSV
