@@ -260,6 +260,7 @@ function App() {
               </Box>
               <Tooltip title="PROPERTY NAME, COLUMN NAME, NEW COLUMN NAME, PROPERTY VALUE">
                 <TextField
+                disabled={!isFileUploaded}
                   sx={{
                     backgroundColor: "white",
                     color: "black",
